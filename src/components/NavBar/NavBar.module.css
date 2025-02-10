@@ -1,0 +1,13 @@
+header {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+}
+.navLink {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+}

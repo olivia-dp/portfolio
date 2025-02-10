@@ -1,0 +1,68 @@
+.hero {
+    background-image: url("../../img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img {
+display: none;
+}
+
+.techList {
+    display: flex;
+    justify-content:space-around;
+}
+.btnsList {
+    display: flex;
+    justify-content: space-around;
+}
+.socList {
+    display: flex;
+    gap: 8px;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
+.techItem {
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    padding: 5px;
+}
+.heroBtn {
+    display: block;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+}
+
+@media screen and (min-width: 768px){
+  .heroBox {
+    display: flex;
+    align-items: center;
+  }
+  .img {
+display: block;
+  }
+  .techList {
+    justify-content:start;
+    gap: 15px;
+}
+.btnsList {
+    justify-content: start;
+    gap: 15px;
+}
+}
+
+@media screen and (min-width: 1280px){
+    .heroBox {
+        gap: 50px;
+    }
+    .textBox {
+        max-width: 700px;
+    }
+    
+  }
