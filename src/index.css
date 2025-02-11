@@ -1,9 +1,10 @@
+
 body {
-  background-color: rgb(26, 32, 85);
-  color: aliceblue;
-  margin: 0;
-  font-family: "Poppins", serif;
+background-color: #0b0825; 
+margin: 0;
+font-family: "Poppins";
 }
+
 @font-face {
   font-family: "Merienda";
   src: url("./fonts/Merienda-VariableFont_wght.ttf");
@@ -22,7 +23,7 @@ ul {
 }
 
 section {
-  padding: 40px 0px 0px;
+  padding: 40px 0 40px;
 }
 
 .container {

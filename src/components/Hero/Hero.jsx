@@ -7,13 +7,13 @@ import { MdContactMail } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <section id="anchor1" className={s.hero}> 
+    <section id="anchor1" className={s.hero} > 
       <div className="container">
         <div className={s.heroBox}>  
           <div className={s.textBox}>
             <h1>Frontend Developer</h1>
-            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nostrum, quo sit magnam in repellendus illo veritatis esse quis voluptate doloremque dolores iure distinctio voluptatum repudiandae vel pariatur voluptates ducimus?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quo repudiandae. Officia doloribus incidunt quam quia iste odit, velit reiciendis necessitatibus, alias natus corporis voluptatum odio excepturi enim? Quibusdam, dignissimos.</p>
+            <h3></h3>
+            <p>If you’re looking for a developer who’s passionate, skilled, and loves what they do, let’s connect! I’d love to chat about how we can build something amazing together.</p>
             <ul className={s.techList}>
                 <li className={s.techItem}>React</li>
                 <li className={s.techItem}>JavaScript</li>
@@ -21,10 +21,10 @@ const Hero = () => {
                 <li className={s.techItem}>Node.js</li>
         </ul>
         <ul className={s.btnsList}> 
-            <li><a className={s.heroBtn}><GrProjects /> Projects</a></li>
-            <li><a className={s.heroBtn}><MdContactMail /> Contacts</a></li>
+            <li className={s.heroBtn}><a >Projects</a><GrProjects className={s.btnIcon}/></li>
+            <li className={s.heroBtn}><a >Contacts</a><MdContactMail className={s.btnIcon}/></li>
         </ul>
-        <nav>
+        <nav className={s.navList}>
             <ul className={s.socList}>
                 <li><a href="https://github.com/olivia-dp" target="_blank"><BsGithub className={s.icon}/></a></li>
                 <li><a><TbBrandLinkedinFilled className={s.icon}/></a></li>
@@ -34,11 +34,10 @@ const Hero = () => {
           </div>
           
         <div className={s.img}>
-        <img src="/src/img/developer.png" alt="Fullstack Developer" width="276" height="416" className="hero-image"/>
+        <img src="/src/img/developer.png" alt="Fullstack Developer" width="476" height="616" className="hero-image"/>
       </div>
       </div>
         </div>
-      
     </section>
   )
 }

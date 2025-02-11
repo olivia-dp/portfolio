@@ -1,10 +1,8 @@
 .hero {
-    background-image: url("../../img/background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
+    background-image: url("src/img/background.png");
+    margin: 0;
+   }
+   
 .img {
 display: none;
 }
@@ -12,49 +10,105 @@ display: none;
 .techList {
     display: flex;
     justify-content:space-around;
+    margin: 0 0 20px;
 }
 .btnsList {
     display: flex;
     justify-content: space-around;
+    margin: 0 0 20px;
 }
 .socList {
     display: flex;
     gap: 8px;
+    margin: 0;
+    
 }
 .icon {
     width: 20px;
     height: 20px;
+    color:#fff;
 }
+.btnIcon {
+    width: 20px;
+    height: 20px;
+    color:#fff;
+}
+
 .techItem {
-    border: 1px solid whitesmoke;
-    border-radius: 5px;
-    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
-    padding: 5px;
+    background-color: rgba(51, 40, 40, 0.555);
+    font-size:small;
+    font-family: "Poppins";
+    color: #fff;
+    border-radius: 7px;
+    padding: 8px;
+    
 }
 .heroBtn {
+    background-color: rgba(0, 0, 0, 0.685);
+    font-family: "Poppins";
     display: block;
     padding: 10px;
-    border: 1px solid whitesmoke;
     border-radius: 5px;
-    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: -6px -5px 8px -3px #89A6C6, 
+    6px 8px 5px -6px #C7D8D0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    align-items: center;
 }
+    .heroBtn:hover {
+    transform: scale(1.1);
+}
+h1 {
+    transition: all 10s;
+    background: linear-gradient(5deg, rgb(136, 48, 129), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+h3, p {
+    color: #fff;
+    text-align: center;
+    margin: 20px 0;
+}
+.navList {
+    justify-items: center;
+}
+
 
 @media screen and (min-width: 768px){
   .heroBox {
     display: flex;
     align-items: center;
   }
+
   .img {
 display: block;
+
+  }
+  .textBox {
+    justify-items: center;   
   }
   .techList {
     justify-content:start;
-    gap: 15px;
+    gap: 25px;
+    margin-bottom: 25px;
 }
 .btnsList {
     justify-content: start;
-    gap: 15px;
+    gap: 35px;
+    margin: 0 0 50px;
 }
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
 }
 
 @media screen and (min-width: 1280px){
@@ -64,5 +118,19 @@ display: block;
     .textBox {
         max-width: 700px;
     }
+    .img {
+       transition: all 10s;
+    }
+    .img:hover {
+        scale: 1.1;
+    }
+    h1 {
+        font-size: 72px;
+        margin: 0;
+    }
+    .socList {
+        gap: 35px;
+    }
+    
     
   }
