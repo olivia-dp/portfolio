@@ -1,0 +1,38 @@
+[
+    {"id": 0,
+    "name": "WebStudio",
+    "img": "/src/img/webStudio.JPG",
+    "description": "One-page site, develope on HTML, CSS with adaptive.",
+    "links": {
+        "github": "",
+        "web": "https://olivia-dp.github.io/goit-markup-hw-06/"
+    }
+},
+{"id": 1,
+"name": "YachtJet",
+"img": "/src/img/yachtJet.JPG",
+"description": "A website of YachtJet company. Responsive design, transform effects, modal windows, forms for feedback.",
+"links": {
+    "github": "",
+    "web": "https://niko-1515.github.io/Team-project-YachtJet-/"
+}
+},
+{"id": 2,
+"name": "Developer Portfolio",
+"img": "/src/img/developerPr.JPG",
+"description": "A website of Portfolio. Responsive design, transform effects, modal windows. Java Script libraries: Axios, Swiper, Accordion, iziToast",
+"links": {
+    "github": "",
+    "web": "https://artem-ilchuk.github.io/Team-project-Porfolio/"
+}
+},
+{"id": 3,
+"name": "Contact Book",
+"img": "/src/img/contactBook.JPG",
+"description": "Developing a contacts book using React.js, REST API, Redux.js, and Tailwind CSS for styling.",
+"links": {
+    "github": "",
+    "web": "https://goit-react-hw-08-tau-ten.vercel.app/"
+}
+}
+]

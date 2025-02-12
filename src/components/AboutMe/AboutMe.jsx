@@ -14,8 +14,8 @@ const AboutMe = () => {
             a frontend developer, which want to work with great people who are equally passionate about what they do. For me, coding isn’t just about writing lines of code - it’s about finding real solutions that bring value. I have a solid foundation in HTML, CSS, JavaScript, React, and TypeScript, and I’m always eager to learn something new.
             </p>
             <div className={s.btnBox}>
-              <a className={s.aboutBtn}>Download CV</a>
-              <a className={s.aboutBtn}>View Projects</a>
+              <a href="https://drive.google.com/uc?export=download&id=1LL4gFdgiTZhC8MrHtv63WHCKU40UMjGo" className={s.aboutBtn}>Download CV</a>
+              <a href="#anchor4" className={s.aboutBtn}>View Projects</a>
             </div>
           </div>
         </div>
@@ -25,3 +25,7 @@ const AboutMe = () => {
 }
 
 export default AboutMe
+
+
+
+
