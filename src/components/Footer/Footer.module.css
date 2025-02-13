@@ -1,0 +1,35 @@
+.footer {
+    padding: 10px 40px;
+    background-color: rgb(255, 255, 255);
+    border-top: 3px solid rgb(136, 48, 129);
+    
+}
+.navMenu {
+
+    font-family: "Merienda";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+}
+.copyright {
+    color:#000000;
+    margin: 0;
+}
+.navLink {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.navItem {
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color:#000000;
+}

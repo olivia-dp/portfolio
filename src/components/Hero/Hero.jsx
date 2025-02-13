@@ -14,12 +14,21 @@ const Hero = () => {
             <h1>Frontend Developer</h1>
             <h3></h3>
             <p>If you’re looking for a developer who’s passionate, skilled, and loves what they do, let’s connect! I’d love to chat about how we can build something amazing together.</p>
-            <ul className={s.techList}>
-                <li className={s.techItem}>React</li>
-                <li className={s.techItem}>JavaScript</li>
-                <li className={s.techItem}>TypeScript</li>
-                <li className={s.techItem}>Node.js</li>
-        </ul>
+            <div className={s.marqueeWrapper}>
+            <ul className={s.marqueeContent}>
+      <li className={s.techItem}>React</li>
+      <li className={s.techItem}>JavaScript</li>
+      <li className={s.techItem}>TypeScript</li>
+      <li className={s.techItem}>Node.js</li>
+    </ul>
+    {/* Дублируем список для бесшовного эффекта */}
+    <ul className={s.marqueeContent}>
+      <li className={s.techItem}>React</li>
+      <li className={s.techItem}>JavaScript</li>
+      <li className={s.techItem}>TypeScript</li>
+      <li className={s.techItem}>Node.js</li>
+    </ul>
+            </div>
         <ul className={s.btnsList}> 
             <li className={s.heroBtn}><a >Projects</a><GrProjects className={s.btnIcon}/></li>
             <li className={s.heroBtn}><a >Contacts</a><MdContactMail className={s.btnIcon}/></li>

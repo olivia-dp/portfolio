@@ -1,15 +1,16 @@
+import s from "./ProjectItem.module.css"
 
-
-const ProjectItem = ({title, img}) => {
+const ProjectItem = ({ project, onClick }) => {
   return (
-    <div>
+    <>
+    
+      <div onClick={onClick} style={{ cursor: "pointer" }} className={s.card}>
+      <h3 className={s.name}>{project.name}</h3>
+        <img src={project.img} width="500" height="400" alt={project.name} />
+      </div>
+      
+    </>
+  );
+};
 
-      <img src={ `${img}`} width="500" height="400"/>
-      <h2>{title}</h2>
-
-       
-    </div>
-  )
-}
-
-export default ProjectItem
+export default ProjectItem;

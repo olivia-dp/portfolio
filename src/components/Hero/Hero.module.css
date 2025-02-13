@@ -6,12 +6,45 @@
 .img {
 display: none;
 }
-
-.techList {
+@keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .techList {
     display: flex;
-    justify-content:space-around;
-    margin: 0 0 20px;
-}
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .marqueeWrapper {
+    display: flex;
+    max-width: 200%;
+    animation: marquee 10s linear infinite;
+  }
+  
+  .marqueeContent {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .techItem {
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #222;
+    color: white;
+    margin: 0 10px;
+    border-radius: 8px;
+    flex-shrink: 0; /* Запрещаем сжатие */
+  }
+  
+
 .btnsList {
     display: flex;
     justify-content: space-around;
@@ -34,15 +67,7 @@ display: none;
     color:#fff;
 }
 
-.techItem {
-    background-color: rgba(51, 40, 40, 0.555);
-    font-size:small;
-    font-family: "Poppins";
-    color: #fff;
-    border-radius: 7px;
-    padding: 8px;
-    
-}
+
 .heroBtn {
     background-color: rgba(0, 0, 0, 0.685);
     font-family: "Poppins";
